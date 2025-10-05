@@ -7,12 +7,14 @@ import com.sendgrid.SendGrid;
 import com.sendgrid.helpers.mail.Mail;
 import com.sendgrid.helpers.mail.objects.Content;
 import com.sendgrid.helpers.mail.objects.Email;
+import jakarta.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.sus.application.gateway.EnviaNotificacaoGateway;
 import org.sus.domain.Notificacao.model.Notificacao;
 
 import java.io.IOException;
 
+@ApplicationScoped
 public class SendGridEmailGateway implements EnviaNotificacaoGateway {
 
     private final SendGrid sendGrid;

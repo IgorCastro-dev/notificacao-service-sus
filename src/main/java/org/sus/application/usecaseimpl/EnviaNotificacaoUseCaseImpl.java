@@ -9,7 +9,7 @@ import java.io.IOException;
 public class EnviaNotificacaoUseCaseImpl implements EnviaNotificacaoUseCase {
     private EnviaNotificacaoGateway enviaNotificacaoGateway;
 
-    EnviaNotificacaoUseCaseImpl (EnviaNotificacaoGateway enviaNotificacaoGateway){
+    public EnviaNotificacaoUseCaseImpl(EnviaNotificacaoGateway enviaNotificacaoGateway){
         this.enviaNotificacaoGateway = enviaNotificacaoGateway;
     }
 
