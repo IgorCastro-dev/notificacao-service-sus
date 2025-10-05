@@ -8,7 +8,6 @@ import org.sus.application.usecaseimpl.EnviaNotificacaoUseCaseImpl;
 @ApplicationScoped
 public class NotificacaoConfig {
 
-
     @Produces
     @ApplicationScoped
     public EnviaNotificacaoUseCaseImpl enviaNotificacaoUseCase(EnviaNotificacaoGateway enviaNotificacaoGateway){
